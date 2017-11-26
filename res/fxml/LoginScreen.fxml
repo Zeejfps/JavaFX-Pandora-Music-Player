@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:controller="me.zeejfps.player.LoginController"
+           xmlns:fx="http://javafx.com/fxml">
+
+    <GridPane alignment="center" hgap="10" vgap="10">
+        <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+
+        <Label fx:id="warningLabel"
+               GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
+
+        <Label text="Username:"
+               GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+
+        <TextField fx:id="usernameField"
+                   GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+        <Label text="Password:"
+               GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+
+        <PasswordField fx:id="passwordField"
+                       GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+        <Button text="Login" onAction="#loginButtonClicked"
+                GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.halignment="RIGHT"/>
+
+    </GridPane>
+
+    <VBox fx:id="progressPane" style="-fx-background-color: #00000056" alignment="CENTER" visible="false">
+        <ProgressIndicator prefWidth="60" prefHeight="60"/>
+    </VBox>
+
+</StackPane>

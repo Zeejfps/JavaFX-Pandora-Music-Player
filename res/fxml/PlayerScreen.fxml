@@ -1,0 +1,45 @@
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
+<HBox fx:controller="me.zeejfps.player.PlayerController"
+      xmlns:fx="http://javafx.com/fxml">
+
+    <ListView fx:id="stationsListView"/>
+
+    <StackPane prefWidth="500" prefHeight="500">
+
+        <BorderPane fx:id="tackImageViewContainer">
+            <center>
+                <ImageView fx:id="trackImageView"/>
+            </center>
+        </BorderPane>
+
+        <BorderPane style="-fx-background-color: #000000B7">
+
+            <top>
+                <Label fx:id="trackLabel" id="track-label"/>
+            </top>
+
+            <bottom>
+
+                <VBox alignment="CENTER" >
+                    <padding><Insets bottom="25" right="25" left="25" top="25"/></padding>
+                    <Button text="Skip" onAction="#skipButtonClicked"/>
+                    <Slider fx:id="timeSlider"/>
+                </VBox>
+
+            </bottom>
+
+        </BorderPane>
+
+        <HBox alignment="CENTER">
+            <Button fx:id="playButton" text="" onAction="#playButtonClicked" id="play-button" prefWidth="100" prefHeight="100"/>
+        </HBox>
+
+    </StackPane>
+
+</HBox>

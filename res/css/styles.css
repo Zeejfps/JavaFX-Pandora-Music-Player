@@ -1,0 +1,19 @@
+#track-label {
+    -fx-text-fill: white;
+    -fx-font-size: 18pt;
+    -fx-font-weight: bold;
+    -fx-padding: 25;
+}
+
+#play-button {
+    -fx-font: 32px "FontAwesome";
+    -fx-background-radius: 6em;
+    -fx-border-radius: 20;
+    -fx-background-color: #00000000;
+    -fx-text-fill: #ffffffA0;
+}
+
+#play-button:hover {
+    -fx-background-color: #00000030;
+    -fx-text-fill: white;
+}
