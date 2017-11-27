@@ -28,9 +28,10 @@ public class PandoraPlayer extends Application {
         scene = new Scene(FXMLLoader.load(getClass().getResource("/fxml/LoginScreen.fxml")));
         scene.getStylesheets().add("/css/styles.css");
         stage = primaryStage;
-        stage.setTitle("Pandora Player v0.0.1");
+        stage.setTitle("Pandora Player");
         stage.setScene(scene);
         stage.sizeToScene();
+        stage.centerOnScreen();
         stage.setResizable(false);
         stage.show();
     }
@@ -38,6 +39,7 @@ public class PandoraPlayer extends Application {
     public void setScreen(Parent root) {
         scene.setRoot(root);
         stage.sizeToScene();
+        stage.centerOnScreen();
     }
 
     public PandoraClient getPandoraClient() {

@@ -36,9 +36,7 @@
 
         </BorderPane>
 
-        <HBox alignment="CENTER">
-            <Button fx:id="playButton" text="" onAction="#playButtonClicked" id="play-button" prefWidth="100" prefHeight="100"/>
-        </HBox>
+        <Button fx:id="playButton" text="" onAction="#playButtonClicked" id="play-button" prefWidth="100" prefHeight="100"/>
 
     </StackPane>
 
