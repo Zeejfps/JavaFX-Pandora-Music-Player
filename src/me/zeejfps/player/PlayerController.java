@@ -17,6 +17,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
+import javafx.scene.text.Font;
 import javafx.util.Duration;
 import me.zeejfps.paw.PandoraClient;
 import me.zeejfps.paw.models.Station;
@@ -63,6 +64,9 @@ public class PlayerController implements Initializable {
         stationsListView.getSelectionModel().select(0);
         trackImageView.fitWidthProperty().bind(tackImageViewContainer.widthProperty());
         trackImageView.fitHeightProperty().bind(tackImageViewContainer.heightProperty());
+        Font font = Font.loadFont(PandoraPlayer.class.getClassLoader().getResource("fonts/fontawesome-webfont.ttf").toExternalForm(), 32);
+        System.out.println(font);
+        //playButton.setFont(font);
     }
 
     @FXML

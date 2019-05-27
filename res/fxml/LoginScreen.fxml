@@ -13,7 +13,7 @@
         <Label fx:id="warningLabel"
                GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
 
-        <Label text="Username:"
+        <Label text="Email:"
                GridPane.columnIndex="0" GridPane.rowIndex="1"/>
 
         <TextField fx:id="usernameField"

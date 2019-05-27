@@ -24,11 +24,10 @@ public class PandoraPlayer extends Application {
     public void start(Stage primaryStage) throws Exception{
         instance = this;
         pandoraClient = new PandoraClient();
-        Font.loadFont("/fonts/FontAwesome.otf", 32);
         scene = new Scene(FXMLLoader.load(getClass().getResource("/fxml/LoginScreen.fxml")));
         scene.getStylesheets().add("/css/styles.css");
         stage = primaryStage;
-        stage.setTitle("Pandora Player");
+        stage.setTitle("Login");
         stage.setScene(scene);
         stage.sizeToScene();
         stage.centerOnScreen();
@@ -40,6 +39,10 @@ public class PandoraPlayer extends Application {
         scene.setRoot(root);
         stage.sizeToScene();
         stage.centerOnScreen();
+    }
+
+    public void setTitle(String title) {
+        stage.setTitle(title);
     }
 
     public PandoraClient getPandoraClient() {

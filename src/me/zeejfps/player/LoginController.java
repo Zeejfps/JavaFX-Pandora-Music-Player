@@ -58,6 +58,7 @@ public class LoginController implements Initializable {
         loginTask.setOnSucceeded(event -> {
             try {
                 PandoraPlayer.getInstance().setScreen(FXMLLoader.load(getClass().getResource("/fxml/PlayerScreen.fxml")));
+                PandoraPlayer.getInstance().setTitle("Pandora Player");
             } catch (IOException e) {
                 e.printStackTrace();
             }
